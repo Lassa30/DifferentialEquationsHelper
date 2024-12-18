@@ -1,2 +1,10 @@
 # data
 data/*
+
+# dart / flutter
+.d*
+.f*
+build
+macos
+web
+pubspec.lock

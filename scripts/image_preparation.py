@@ -87,13 +87,19 @@ def heic_to_jpeg(images_input_path, delete_heic=False):
 class DataFrameFromImages:
     """
     Class to get pandas.DataFrame from images.
-    
+
     Also it's possible to split data to train and val in given proportion, If you have dataframe.
     If the labels are provided, stratification is applied.
     Otherwise just random split of images is applied.
     """
 
-    def __init__(self, images_dataframe=None, dir_path="../data", images_dir_name="images/images_all", labels_dir_name="labels/labels_all"):
+    def __init__(
+        self,
+        images_dataframe=None,
+        dir_path="../data",
+        images_dir_name="images/images_all",
+        labels_dir_name="labels/labels_all",
+    ):
         self.dir_path = dir_path
         self.images_dir_name = images_dir_name
         self.labels_dir_name = labels_dir_name

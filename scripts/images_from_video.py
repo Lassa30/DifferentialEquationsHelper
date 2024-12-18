@@ -8,7 +8,7 @@ if __name__ == "__main__":
         images_path = "../data/images/images_all"
         for video_name in os.listdir(videos_path):
             video_path = os.path.join(videos_path, video_name)
-            print("Video {} is processing...".format(video_name.split('.')[0]))
+            print("Video {} is processing...".format(video_name.split(".")[0]))
             video_to_frames(video_path, images_path, video_name)
             print("The end of processing.")
     else:
